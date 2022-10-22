@@ -44,9 +44,10 @@ a{
 main{
     margin-inline: 6rem 1rem;
     padding-block: 2rem;
+    text-align: center;
 }
 
-/* ================== SIDEBAR ===================== */
+/* ================== SIDEBAR 1 ===================== */
 .nav{
     width: 72px;
     height: max-content;
@@ -136,6 +137,22 @@ main{
 .nav_square-2{
     bottom: -39px;
 }
+
+
+/* ================== SIDEBAR 2 ===================== */
+.nav2{
+    width: 72px;
+    height: max-content;
+    position: relative;
+    inset: 0;
+    float: right;
+    margin: auto 0;
+}
+
+
+
+
+
 
 /* Active link */
 .active-link{
