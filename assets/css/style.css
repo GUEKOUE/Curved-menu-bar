@@ -146,13 +146,90 @@ main{
     position: relative;
     inset: 0;
     float: right;
-    margin: auto 0;
+    margin-top: 65px;
 }
 
+.nav2_list{
+    position: relative;
+    background-color: var(--first-color);
+    padding-block: 70px;
+    border-radius: 50px 0 0 50px;
+    display: grid;
+    justify-content: center;
+    row-gap: 2rem;
+}
 
+.nav2_link{
+    position: relative;
+    display: inline-flex;
+    padding: 4px;
+    border-radius: 50%;
+    transition: background .4s;
+}
 
+.nav2_link i{
+    font-size: 1.25rem;
+    color: var(--white-color);
+    transition: color .4s;
+}
 
+.nav2_name{
+    position: absolute;
+    top: 0;
+    transform: translateX(-155px);
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 3rem;
+    pointer-events: none;
+    transition: transform .5s, opacity .5s;
+    opacity: 0;
+}
 
+.nav2_link:hover .nav2_name{
+    opacity: 1;
+    transform: translateX(-147px);
+}
+
+/* Shapes */
+.nav2_circle-1,
+.nav2_circle-2{
+    width: 72px;
+    height: 75px;
+    background-color: var(--body-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+
+.nav2_circle-1{
+    top: -73px;
+}
+
+.nav2_circle-2{
+    bottom: -74px;
+}
+
+.nav2_square-1,
+.nav2_square-2{
+    width: 35px;
+    height: 40px;
+    background-color: var(--first-color);
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.nav2_square-1{
+    top: -39px;
+}
+
+.nav2_square-2{
+    bottom: -39px;
+}
 
 /* Active link */
 .active-link{
@@ -161,4 +238,9 @@ main{
 
 .active-link i{
     color: var(--first-color);
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }

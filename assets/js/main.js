@@ -1,5 +1,10 @@
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
+
 /* ========== ACTIVE LINK ========== */
-const navLink = document.querySelectorAll('.nav_link')
+const navLink = document.querySelectorAll(".nav_link,.nav2_link");
 
 function linkColor() {
     navLink.forEach(link => link.classList.remove('active-link'))
